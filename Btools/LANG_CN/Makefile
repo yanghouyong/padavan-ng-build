@@ -33,54 +33,6 @@ ifeq ($(CONFIG_FIRMWARE_INCLUDE_WPAD),y)
 	ln -s /etc/storage/wpad.dat $(ROMFS_DIR)/www/wpad.da
 	ln -s /etc/storage/wpad.dat $(ROMFS_DIR)/www/proxy.pac
 endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_BR),y)
-	echo "LANG_BR=Brazil" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/BR.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_CZ),y)
-	echo "LANG_CZ=Česky" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/CZ.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_DA),y)
-	echo "LANG_DA=Dansk" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/DA.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_DE),y)
-	echo "LANG_DE=Deutsch" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/DE.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_ES),y)
-	echo "LANG_ES=Español" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/ES.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_FI),y)
-	echo "LANG_FI=Finsk" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/FI.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_FR),y)
-	echo "LANG_FR=Français" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/FR.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_NO),y)
-	echo "LANG_NO=Norsk" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/NO.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_PL),y)
-	echo "LANG_PL=Polski" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/PL.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_RU),y)
-	echo "LANG_RU=Pусский" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/RU.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_SV),y)
-	echo "LANG_SV=Svensk" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/SV.dict $(ROMFS_DIR)/www
-endif
-ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_UK),y)
-	echo "LANG_UK=Українська" >> $(ROMFS_DIR)/www/EN.header
-	cp dict/UK.dict $(ROMFS_DIR)/www
-endif
 ifeq ($(CONFIG_FIRMWARE_INCLUDE_LANG_CN),y)
 	echo "LANG_CN=简体中文" >> $(ROMFS_DIR)/www/EN.header
 	cp dict/CN.dict $(ROMFS_DIR)/www
